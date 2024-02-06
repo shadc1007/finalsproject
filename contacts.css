@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    margin: 0;
+    position: relative;
+    max-width: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #800000;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 45px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+}
+
+ul li a img {
+    height: 25px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #fff;
+    font-family: 'Cinzel';
+    font-size: 0.8rem;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+
+
+.bookmark {
+    width: 100%;
+    background-color: #ffa927;
+}
+
+.bookmark p {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.bookmarkbold {
+    font-weight: bold;
+}
+
+
+.maintext {
+    padding: 2.5rem 4rem;
+    margin: 1rem;
+}
+
+.maintext h1 {
+    font-size: 2.5rem;
+}
+
+span.line {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-top: 5px solid #800000;
+}
+
+.maintext h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0.3rem;
+}
+
+.maintext p {
+    color: rgb(116, 116, 116);
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+}
+
+a:hover {
+    color: #800000;
+    text-decoration: underline;
+}
+
+
+
+
+/* footer */
+footer{
+    margin-top: 5rem;
+    padding-top: 50px;
+    position: relative;
+}
+
+.bottom-bar{
+    position: relative;
+    bottom: 0;
+    background: #800000;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
+@media (max-width: 768px) {
+
+    
+    header {
+        align-items: center;
+    }
+
+    
+    .hamburger {
+    display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+    }
+
+
+    .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #800000;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    }
+
+    .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #800000;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    }
+
+    .nav-item {
+    margin: 16px 0;
+    }
+
+    .nav-menu.active {
+    left: 0;
+    }
+
+
+
+    .maintext {
+        margin: 0.8rem;
+        padding: 2rem 3.5rem;
+    }
+
+    .maintext h1 {
+        font-size: 2rem;
+    }
+
+    .maintext h2 {
+        font-size: 1.4rem;
+    }
+
+    .maintext p {
+        font-size: 1rem;
+    }
+
+}
